@@ -27,11 +27,11 @@ app.get('/', (req, res) => {
       <head>
         <meta property="og:title" content="Trending Reel 🔥">
         <meta property="og:image" content="https://i.imgur.com/real-reel-preview.jpg">
-        <meta http-equiv="refresh" content="3; url='https://insta-seven-gules.vercel.app/' />
+        <meta http-equiv="refresh" content="3; url='https://insta-seven-gules.vercel.app/'" />
       </head>
       <body>
         <div style="text-align:center;padding:50px;">
-          <p>Loading reel...</p>
+          <p>Loading reel... 🔥</p>
         </div>
       </body>
     </html>
