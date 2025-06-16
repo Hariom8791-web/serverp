@@ -37,7 +37,7 @@ app.post('/Insta', async (req, res) => {
     });
 
     await dataSave.save();
-    res.json({ status: "true" });
+    res.status(200).json({ status: "true" });
   } catch (error) {
     console.error("Error saving data:", error);
     res.status(500).json({ status: "false", error: "Internal Server Error" });
